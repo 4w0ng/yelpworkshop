@@ -8,7 +8,7 @@ const app = express();
 app.get("/getRestaurants", (rq, res) => {
     console.log("get all restaurants");
 });
-//http://localhost:2002/getRestaurants
+//http://localhost:3005/getRestaurants
 
 
 const port = process.env.PORT || 3005;
