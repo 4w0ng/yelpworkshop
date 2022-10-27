@@ -5,13 +5,13 @@ const express = require("express");
 
 const app = express();
 
-app.get("/getRestaurants", (rq, res) => {
+app.get("/getRestaurants", (req, res) => {
     console.log("get all restaurants");
 });
-//http://localhost:2002/getRestaurants
+//http://localhost:5000/getRestaurants
 
 
-const port = process.env.PORT || 3005;
+const port = process.env.PORT || 5000;
 app.listen(port, () => {
     console.log(`server is up and listening on port ${port}`);
 });
